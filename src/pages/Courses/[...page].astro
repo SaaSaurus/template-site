@@ -1,0 +1,45 @@
+---
+import Nav from '../../components/Navbar.astro';
+import Course from '../../components/Courses.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import site from '../../site.json'
+
+export async function getStaticPaths({ paginate }) {
+  console.log("Hello world")
+  // Load your data with fetch(), Astro.fetchContent(), etc.
+  const courses = Astro.fetchContent('./*.md')
+  // Return a paginated collection of paths for all posts
+  return paginate(courses, {pageSize: 5})
+}
+// If set up correctly, The page prop now has everything that
+// you need to render a single page (see next section).
+const { page } = Astro.props;
+
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <title>Astro + TailwindCSS</title>
+    <link rel="stylesheet" type="text/css" href={Astro.resolve("../../styles/global.css")}>
+  </head>
+
+  <body>
+    <Sidebar></Sidebar>
+    <Nav name="{site.title}" menus="{site.menus}" auth="{site.auth}" ></Nav>
+    <div class="flex justify-center mt-10 w-full">
+      <h1 class="max-w-screen-xl mx-auto text-4xl font-bold">All You've Missed</h1>
+    </div>
+    <section class="bg-secondary w-full">
+      <div class="px-20 py-10 mx-auto max-w-screen-xl">
+          <div class="grid gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+            {page.data.map((item) => (
+              <Course course={item}></Course>
+            ))}
+          </div>
+      </div>
+    </section>
+  </body>
+</html>

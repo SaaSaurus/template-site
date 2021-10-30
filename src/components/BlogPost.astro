@@ -1,0 +1,33 @@
+---
+import site from '../site.json'
+import Nav from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import MainLayout from '../layouts/MainLayout.astro';
+
+export interface Props {
+  title: string;
+  author: string;
+  publishDate: string;
+  heroImage: string;
+  alt: string;
+}
+
+const {title, publishDate, author, heroImage} = Astro.props
+---
+
+<MainLayout>
+    <Nav name="{site.title}" menus="{site.menus}" auth="{site.auth}" ></Nav>
+    <section class="py-20">
+        <div class="flex flex-col max-w-screen-2xl mx-auto justify-center items-center px-20">
+            <div class="w-1/2 items-start mb-8">
+                <h1 class="text-5xl font-bold mb-8">{title}</h1>
+                <p class="text-lg font-semibold  mb-16">By {author}</p>
+            </div>
+            <img src="{heroImage}" class="w-2/3 mb-16 rounded shadow-2xl"/>
+            <div class="prose w-1/2 items-start">
+                <slot />
+            </div>
+        </div>
+    </section>
+    <Footer {site}></Footer>
+</MainLayout>

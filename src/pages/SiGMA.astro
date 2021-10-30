@@ -1,0 +1,13 @@
+---
+// Component Imports
+import site from '../site.json'
+import Nav from '../components/Navbar.astro';
+import Sidebar from '../components/Sidebar.astro';
+import MainLayout from '../layouts/MainLayout.astro'
+
+---
+
+<MainLayout>
+  <Sidebar></Sidebar>
+  <Nav name="{site.title}" menus="{site.menus}" auth="{site.auth}"></Nav>
+</MainLayout>

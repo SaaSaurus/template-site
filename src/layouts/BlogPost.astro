@@ -1,0 +1,15 @@
+---
+import BlogPost from '../components/BlogPost.astro'
+
+const {content} = Astro.props;
+const {title, description, publishDate, author, heroImage, permalink, alt} = content;
+---
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href={Astro.resolve("../styles/global.css")}>
+    </head>
+    <body>
+        <BlogPost title={title} heroImage={heroImage} author={author} publishDate={publishDate}><slot></slot></BlogPost>
+    </body>
+</html>

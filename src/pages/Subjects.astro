@@ -1,0 +1,77 @@
+---
+// Component Imports
+import site from '../site.json'
+import Nav from '../components/Navbar.astro';
+import Sidebar from '../components/Sidebar.astro';
+import MainLayout from '../layouts/MainLayout.astro'
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<MainLayout>
+  <Sidebar></Sidebar>
+  <Nav name="{site.title}" menus="{site.menus}" auth="{site.auth}"></Nav>
+  <!-- <section class="w-full flex justify-center">
+    <div class="max-w-screen-xl w-full mx-auto flex flex-wrap px-20 gap-y-16 py-8">
+      <div class="w-1/3">
+        <h1 class="text-2xl py-4 font-bold">College</h1>
+        <ul class="flex flex-col gap-3">
+          <li>🏫College Process</li>
+          <li>😱Financial Aid</li>
+          <li>💼Career</li>
+          <li>🪁Alternatives to College</li>
+          <li>🎒ACT</li>
+          <li>✏️PSAT</li>
+          <li>🎓SAT</li>
+          <li>🐿️AP Info</li>
+          <li>⏰Productivity</li>
+        </ul>
+      </div>
+      <div class="w-1/3">
+        <h1 class="text-2xl py-4 font-bold">Humanities & Social Science</h1>
+        <ul class="flex flex-col gap-3">
+          <li>🌍AP World History</li>
+          <li>🇪🇺AP European History</li>
+          <li>📚AP English Literature</li>
+          <li>🇺🇸AP US History</li>
+          <li>🗳️AP Comparative Government</li>
+          <li>🏛️AP US Government</li>
+          <li>🚜AP Human Geography</li>
+          <li>🤑AP Macroeconomics</li>
+          <li>💵AP Microeconomics</li>
+          <li>🧠AP Psychology</li>
+          <li>✍🏽AP English Language</li>
+        </ul>
+      </div>
+      <div class="w-1/3">
+        <h1 class="text-2xl py-4 font-bold">College</h1>
+        <ul class="flex flex-col gap-3">
+          <li>🏫College Process</li>
+          <li>😱Financial Aid</li>
+          <li>💼Career</li>
+          <li>🪁Alternatives to College</li>
+          <li>🎒ACT</li>
+          <li>✏️PSAT</li>
+          <li>🎓SAT</li>
+          <li>🐿️AP Info</li>
+          <li>⏰Productivity</li>
+        </ul>
+      </div>
+      <div class="w-1/3">
+        <h1 class="text-2xl py-4 font-bold">College</h1>
+        <ul class="flex flex-col gap-3">
+          <li>🏫College Process</li>
+          <li>😱Financial Aid</li>
+          <li>💼Career</li>
+          <li>🪁Alternatives to College</li>
+          <li>🎒ACT</li>
+          <li>✏️PSAT</li>
+          <li>🎓SAT</li>
+          <li>🐿️AP Info</li>
+          <li>⏰Productivity</li>
+        </ul>
+      </div>
+    </div>
+  </section> -->
+</MainLayout>

@@ -1,0 +1,126 @@
+{
+    "title":"Template Site",
+    "socials": [
+        {
+            "icon":"https://cdn-icons-png.flaticon.com/512/25/25231.png",
+            "name":"",
+            "link":"https://github.com/"
+        },
+        {
+            "icon":"https://cdn.icon-icons.com/icons2/726/PNG/512/TWITTER_icon-icons.com_62686.png",
+            "name":"",
+            "link":"https://twitter.com/"
+        },
+        {
+            "icon":"https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png",
+            "name":"",
+            "link":"https://www.linkedin.com/company/"
+        }
+    ],
+    "menus": [
+        {
+            "name":"Welcome"
+        },
+        {
+            "name":"Blog"
+        },
+        {
+            "name":"About"
+        },
+        {
+            "name":"Features",
+            "dropdown":true,
+            "items":[
+                {
+                    "name":"Interactive"
+                },
+                {
+                    "name":"Fully Responsive"
+                },
+                {
+                    "name":"Easily Configurable"
+                },
+                {
+                    "name":"Customize to Your Needs"
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "show":true,
+        "signin":"https://www.khanacademy.org/sat",
+        "signup":"https://www.khanacademy.org/"
+    },
+    "hero": {
+        "header":"Perfect for your",
+        "typewriter": [
+            "business.",
+            "platform.",
+            "community.",
+            "start-up."
+        ],
+        "subheader":"Your new favorite site template is here.",
+        "image":"hero.png"
+    },
+    "features": [
+        {
+            "right":true,
+            "image":"luma-screens",
+            "header":"Own Your Learning.",
+            "subheader":"Learn and teach other like-minded students to gain confidence and take ownership of your education.",
+            "list":[
+                {
+                    "text":"Maximize productivity and growth"
+                },
+                {
+                    "text":"Monitor your progress"
+                },
+                {
+                    "text":"Master skills with peers"
+                }
+            ]
+        },
+        {
+            "left":true,
+            "image":"luma-screens",
+            "header":"Finally Be Stress Free",
+            "subheader":"Learn in a personalized environment that reduces stress, increases self-confidence, and improves academic performance.",
+            "list":[
+                {
+                    "text":"No deadlines, no pressure"
+                },
+                {
+                    "text":"Work at your own pace"
+                },
+                {
+                    "text":"Learn on your schedule"
+                }
+            ]
+        }
+    ],
+    "CTA":{
+        "header":"Own Your Learning Now",
+        "subheader":"",
+        "button":"Get Started",
+        "shop":"https://forms.gle/iygJsxkuNrXuzH2k9"
+    },
+    "footer":[
+        {
+            "name":"About"
+        },
+        {
+            "name":"Pricing"
+        },
+        {
+            "name":"Contact"
+        }
+    ],
+    "blog":{
+        "header":"Blog",
+        "subheader":"Weekly articles on motivation, learning and education. Find the best ways to excel in your studies, and get lots of resources to help you along your journey.",
+        "signup": {
+            "header":"Join the SELF School Community and start owning your education.",
+            "subheader":""
+        }
+    }
+}

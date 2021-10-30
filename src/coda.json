@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Khan Academy",
+    "image": ""
+  },
+  {
+    "name": "HL ModTech",
+    "image": {
+      "@context": "http://schema.org/",
+      "@type": "ImageObject",
+      "name": "image.png",
+      "height": 191,
+      "width": 449,
+      "url": "https://codahosted.io/docs/75Fow7MtOA/blobs/bl-2ygWucr5YA/cd74ebb80ffa29312f8eefe061095e48511ec9e1c91aeb19e5d22c12e65278a95b100514369087266817f038585615695ea932d342eb6fb8dae070381fd1102768bf47f3fb58219d39f1f7b2d7afa3d92622928623d76fefeae3b8338e7e973ff8c11ba8",
+      "status": "live"
+    }
+  },
+  {
+    "name": "Approaching (Almost) Any Machine Learning Problem",
+    "image": {
+      "@context": "http://schema.org/",
+      "@type": "ImageObject",
+      "name": "image.png",
+      "height": 293,
+      "width": 196,
+      "url": "https://codahosted.io/docs/75Fow7MtOA/blobs/bl-vcc5Rn_Opc/8b9cce54338a93149b516caff5462428bac1b2228b7c5f768553cc067706e85f185a1176a8ffafd79b3ebfcd8809fe6983d318243f553bda34c28969979f8d8a85dfaa7badccdb0498d80a6f7a24a560bf74a705330a36829d5997129f7f3f5171576abc",
+      "status": "live"
+    }
+  },
+  {
+    "name": "Natural Language Image Search",
+    "image": {
+      "@context": "http://schema.org/",
+      "@type": "ImageObject",
+      "name": "image.png",
+      "height": 741,
+      "width": 1046,
+      "url": "https://codahosted.io/docs/75Fow7MtOA/blobs/bl-FtzBUbIuvS/d87c1932d545141654b98c59fd5da878e68ae43bd9e145251c58508405ad4b297e1a4553610dc9ef276b3ff22538f783648731712290b9c40ea59435933c360a99891fb4a760cdaba4dc4a0de271d33a69a7a7c846ecfcfac58340a3de658c0f2521d22a",
+      "status": "live"
+    }
+  },
+  {
+    "name": "Arthur Conan Doyle",
+    "image": ""
+  },
+  {
+    "name": "Luetin09",
+    "image": ""
+  },
+  {
+    "name": "Planet eBook",
+    "image": ""
+  },
+  {
+    "name": "460 Free Textbooks – Math, Science, and More [Online PDF for College and High School]",
+    "image": ""
+  },
+  {
+    "name": "David B. Surowski",
+    "image": ""
+  },
+  {
+    "name": "Stanford Online High School",
+    "image": ""
+  },
+  {
+    "name": "United States Military Academy",
+    "image": ""
+  },
+  {
+    "name": "Dive Into Deep Learning",
+    "image": ""
+  },
+  {
+    "name": "Hillsdale College",
+    "image": {
+      "@context": "http://schema.org/",
+      "@type": "ImageObject",
+      "name": "hillsdale-college-logo-blue.svg",
+      "height": "",
+      "width": "",
+      "url": "https://codahosted.io/docs/75Fow7MtOA/blobs/bl-Xi5Ej5gagV/7b6f79cf0c1c1b19770c6f52878b8105aed85c5e4a798e8805e39f1e441bdb9c3d2947f13dfb9e95b2c96c94ee099641701ec4b4ea2a4340685278e3c00635b88dd9389879722e93a0082b9ba76c9932bf340c3fc8c0e2e19ce990a3bd681cf9a24e9c43",
+      "status": "live"
+    }
+  },
+  {
+    "name": "OpenStacks",
+    "image": ""
+  },
+  {
+    "name": "Pavel Grinfeld",
+    "image": ""
+  }
+]

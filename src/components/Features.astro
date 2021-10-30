@@ -1,0 +1,16 @@
+---
+import Left from '../components/FeatureLeft.astro';
+import Right from '../components/FeatureRight.astro';
+const {features} = Astro.props;
+---
+
+<section class="w-full bg-secondary pt-7 -mb-20">
+    {features.map((item) => (
+        item.right ? (
+            <Right item="{item}"></Right>
+        ): (
+            <Left item="{item}"></Left>
+        )
+    ))}
+
+</section>

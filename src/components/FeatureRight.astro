@@ -1,0 +1,31 @@
+---
+const {item} = Astro.props
+---
+
+<div class="box-border flex flex-col items-center content-center mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-screen-2xl px-16">
+    <div class="box-border relative w-full max-w-md mt-5 mb-4 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 pt-12 p-24 pl-24 -mr-24">
+        <img src={`/image-packs/${item.image}/feature-right.png`} class="-ml-16 shadow-xl -rotate-1 rounded-xl relative z-10">
+        <div class="absolute top-0 right-0 w-full h-full mt-32 mr-16 transform scale-125 rotate-45">
+            <svg class="absolute top-0 w-3/4 h-3/4 transform fill-current lg:scale-x-150 text-purple-100" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <path id="blob" d="M416,302Q374,354,331,411Q288,468,226,434Q164,400,120.5,356.5Q77,313,81.5,251.5Q86,190,113,124.5Q140,59,212.5,55.5Q285,52,330,98.5Q375,145,416.5,197.5Q458,250,416,302Z"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="box-border order-first w-full text-black border-solid md:order-none md:w-1/2 pl-24">
+        <h2 class="m-0 text-6xl font-bold leading-tight bg-gradient-to-r from-indigo-500 to-primary text-transparent bg-clip-text">
+            {item.header}
+        </h2>
+        <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 text-xl">
+            {item.subheader}
+        </p>
+        <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+            {item.list.map(item => {
+                return (
+                    <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                        <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-primary rounded-full"><span class="text-sm font-bold">✓</span></span> {item.text}
+                    </li>
+                )
+            })}
+        </ul>
+    </div>
+</div>
